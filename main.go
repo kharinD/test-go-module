@@ -1,7 +1,6 @@
 package main
 
 import (
-	//"github.com/shourshort/test-go-module/lesson1"
 	"github.com/shourshort/test-go-module/lesson1"
 	"os"
 )
