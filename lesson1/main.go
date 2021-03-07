@@ -1,6 +1,16 @@
 package lesson1
 
-type User struct {
-	Name    string
-	Surname string
+import (
+	"fmt"
+	"github.com/beevik/ntp"
+)
+
+func GetTime() {
+	time, err := ntp.Time("0.beevik-ntp.pool.ntp.org")
+
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println(time)
+	}
 }
